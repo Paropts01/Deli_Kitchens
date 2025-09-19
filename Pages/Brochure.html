@@ -11,12 +11,28 @@
     <style>
     main {
     background-image: url("../Assets/wood.jpg");
-    background-size: cover;       
-    background-position: center;  
-    background-repeat: no-repeat; 
-    min-height: 80vh;             
-    padding: 40px;
+      background-size: cover;        
+  background-position: center;   
+  background-repeat: no-repeat;  
+  background-attachment: fixed;  
+  min-height: 20vh;              
+  padding: 20px;
+  box-sizing: border-box;
     }
+
+        @media (max-width: 768px) {
+  main {
+    padding: 20px;
+    min-height: 60vh;
+  }
+}
+
+@media (max-width: 480px) {
+  main {
+    padding: 10px;
+    min-height: 50vh;
+  }
+  }
 </style>
 </head>
 <body>

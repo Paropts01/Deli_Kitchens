@@ -94,7 +94,7 @@ Deli Kitchen/
 - updated my style.css
 
 # Responsiveness
-- .Assets/laptop
+- .Assets/Desktop
 - .Assets/tablet
 - .Assets/mobile
 
@@ -105,7 +105,7 @@ Deli Kitchen/
 
 # Dependencies
 - Font Awesome -> for icons
-- Google Fonts –> for typography (map)
+- Google Fonts –> for typography 
 
 # Usage instructions
 - download the folder or the resiporstory link 
@@ -133,7 +133,9 @@ Deli Kitchen/
 
 -  W3Schools. Accessed on :(22, September, 2025). Retrieved from W3Schools:https://www.w3schools.com/css/css3_flexbox_responsive.asp
 
-- W3Schools. Accessed on :(23, September, 2025). Retrieved from W3Schoolshttps://www.w3schools.com/tags/tag_option.asp
+- W3Schools. Accessed on :(23, September, 2025). Retrieved from W3Schools: https://www.w3schools.com/tags/tag_option.asp
+
+- pexels. Accessed on :(23, September, 2025). Retrieved from Pexels: https://www.pexels.com/photo/assorted-salads-on-bowls-1640773/
 
 
 
