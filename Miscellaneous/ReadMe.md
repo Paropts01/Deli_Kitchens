@@ -94,9 +94,11 @@ Deli Kitchen/
 - updated my style.css
 
 # Responsiveness
-- .Assets/Desktop
-- .Assets/tablet
-- .Assets/mobile
+- .Assets/mobile S 320px
+- .Assets/mobile M 375px
+- .Assets/tablet 768px
+- .Assets/laptop 1024px
+- .Assets/laptop L 1440px
 
 # Installation
 - Download or clone this repository.
