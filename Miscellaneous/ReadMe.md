@@ -93,6 +93,11 @@ Deli Kitchen/
 - added background picture to the brochure page
 - updated my style.css
 
+# changelog version 6 (26/09/2025)
+- added new responsiveness images in assets
+- added responsiveness at the background image
+- updated readme file
+
 # Responsiveness
 - .Assets/mobile S 320px
 - .Assets/mobile M 375px
