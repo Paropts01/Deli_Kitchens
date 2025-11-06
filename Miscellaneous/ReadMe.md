@@ -1,24 +1,5 @@
 # Deli Kitchen
-___________________________
 
-# Table of content
-___________________________
-
-#   About Deli Kitchen
-#   Features
-#   File & file structure
-#   Changelog v1
-#   Changelog v2
-#   Changelog v3
-#   Changelog v4
-#   Changelog v5 
-#   Responsiveness
-#   Installation
-#   Dependencies
-#   Usage instructions
-#   Author
-#   Github link
-#   references
 
 # About Deli kkitchen
 deli kitchen is a static website for a cooking school. it is build using HTML, CSS so far.
@@ -97,6 +78,12 @@ Deli Kitchen/
 - added new responsiveness images in assets
 - added responsiveness at the background image
 - updated readme file
+
+# Part 3
+
+# changelog v1 (06/11/2025)
+- deleted all of the main content on the index page of part 2
+- added a slideshow
 
 # Responsiveness
 - .Assets/mobile S 320px

@@ -9,7 +9,6 @@
 
 header{
     background-color: rgb(231, 229, 229);
-    border-bottom: 5px solid rgb(247, 168, 23) ;
     overflow: hidden;
 }
 
@@ -133,7 +132,7 @@ h1{
   background:orange;
 }
 
-/* ✅ Responsive */
+/* Responsive */
 @media (min-width: 768px) {
   .form-group {
     flex-direction: row;
@@ -361,8 +360,7 @@ button:hover {
   justify-content: space-between; 
   align-items: center;
   padding: 15px 30px;
-  background: rgb(236, 231, 231);
-  
+  background: whitesmoke;
   
 }
 
@@ -373,6 +371,7 @@ button:hover {
   gap: 30px; 
   margin: 0;
   padding: 0;
+  
 }
 
 .nav-links a {
@@ -381,15 +380,15 @@ button:hover {
     text-decoration: none;
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
-    padding: 20px 30px;
-    font-size: 18px;
+    padding: 10px 12px;
+    font-size: 16px;
     transition: background-color 0.3s, transform 0.2s;
 }
 
 
 
 .nav-links li a:hover{
-    background: rgb(247, 168, 23);
+    color: rgb(247, 168, 23);
 }
 
 .nav-links li a{
@@ -411,16 +410,19 @@ button:hover {
   .navbar {
     flex-direction: column;
     align-items: flex-start;
-  }
+  
+}
 
   .nav-links ul {
     flex-direction: column;
     padding: 0;
+    justify-content: center;
   }
 
   .nav-links li {
-    margin-right: 0;
+    margin-bottom: 10px;
     padding: 10px;
+    justify-content: center;
   }
 
   .nav-toggle-label {
