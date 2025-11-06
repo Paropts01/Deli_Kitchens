@@ -388,12 +388,12 @@ button:hover {
 
 
 
-.nav-links li:hover{
+.nav-links li a:hover{
     background: rgb(247, 168, 23);
 }
 
 .nav-links li a{
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family:'Times New Roman', Times, serif;
     font-size: 20px;
     color: black;
 }
@@ -552,3 +552,94 @@ padding: 20px;
     transition: color 0.3s;
 }
 /*social media icons css ends here */
+
+/* Slideshow container fills the screen */
+.slideshow-container {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+}
+
+/* Each slide */
+.mySlides {
+  display: none;
+  width: 100%;
+  height: 100%;
+}
+
+/* Images fill the screen */
+.mySlides img {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover; /* fills screen without stretching */
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 24px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 30px;
+  width: 100%;
+  text-align: center;
+  background:black;
+}
+
+/* Number text (top left) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 16px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 32px;
+  background-color: rgba(0,0,0,0.5);
+  border-radius: 4px;
+  user-select: none;
+  z-index: 10;
+}
+
+.next { right: 20px; }
+.prev { left: 20px; }
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* The dots */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 5px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+  cursor: pointer;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Optional fade effect */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
