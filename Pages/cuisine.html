@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<link rel="stylesheet" href="../css/style.css">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+</head>
+<body>
+
+   <nav class="navbar">    
+      <div class="logo" >
+            <img src="../Assets/logo.png" alt="logo" width="110" height="80" >
+          </div>  
+         <ul>
+          
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="./about.html">About</a></li>
+          <li><a href="./contact.html">Contact</a></li>
+          <li class="dropdown">
+              <a href="#" class="dropbtn">Programs ▾</a>
+            <div class="dropdown-content">
+              <a href="./culinary.html">Diploma in Culinary Arts </a>
+              <a href="./baking.html">Diploma in Proffesional Baking & Pastry</a>
+              <a href="./food_manegement.html">Diploma in Food & Beverage Management</a>
+              <a href="./fundimentals.html">Diploma in Culinary Fundamentals</a>
+              <a href="./cuisine.html">Certificate in International Cuisine</a>
+              <a href="./vegan.html">Certificate in Plant-Based & Vegan Cooking</a>
+              <a href="./artisan.html">Certificate in Artisan Bread & Pastry</a>
+              <a href="./chocolate.html">Certificate in Chocolate & Confectionery Arts</a>
+              <a href="./coffee.html">Certificate in Home Barista & Coffee Brewing</a>
+              <a href="./wine_testing.html">Certificate in Wine Tasting & Pairing</a>
+              <a href="./healthy.html">Certificate in Healthy Cooking for Families</a>
+              <a href="./street_food.html">Certificate in Street Food & Food Truck Creations</a>
+              <a href="./entrepreneurship.html">Certificate in Culinary Entrepreneurship</a>
+              <a href="./food_safety.html">Certificate in Food Safety & Sanitation</a>
+              <a href="./menu.html">Certificate in Menu Design & Cost Control</a>
+              <a href="./hospitality.html">Certificate in Hospitality & Event Management</a>
+            </div>
+          </li>
+          <li><a href="./student_life.html">Student Life</a></li>
+          <li><a href="./apply.html">Apply</a></li>
+       </ul>
+       
+  </nav>
+
+  <header class="program-header">
+    <img src="../Assets/extra.jpeg" alt="Culinary Arts Program">
+    <div class="program-title">
+      <h1>Certificate in International Cuisine</h1>
+      <p>Discover the art of cooking and unlock your professional chef potential.</p>
+    </div>
+  </header>
+    <!-- Program Details Section -->
+  <section class="program-details">
+
+    <div class="program-text">
+      <h2>About the Program</h2>
+      <p>
+        Learning professional international cuisine provides a global perspective on gastronomy, blending cultural appreciation with advanced culinary and management skills. This specialization equips individuals to work in diverse, multi-cultural culinary environments and adapt to evolving global food trends.
+      </p><br>
+
+      <h2>What You’ll Learn</h2>
+      
+        Global Recognition and Mobility<br>
+        Enhanced Creativity and Adaptability<br>
+        Competitive Edge<br>
+        Versatile Skill Set<br>
+        Adaptability and Flexibility<br>
+      <br>
+
+      <h2>Duration & Requirements</h2>
+      <p>
+        <strong>Duration:</strong> 3 years (full-time)<br>
+        <strong>Entry Requirement:</strong> Grade 12 certificate or equivalent<br>
+        <strong>Mode of Study:</strong> On-campus with practical sessions in our training kitchens
+      </p><br>
+
+      <h2>Career Opportunities</h2>
+
+        Executive or Head Chef<br>
+        Specialty Cuisine Chef<br>
+        Private Chef<br>
+        Culinary Instructor<br>
+        Catering Manager<br>
+        <br>
+
+          <h2>Prices</h2>
+        monthly = 2000<br>
+        6 months = R12 000<br>
+        12 months = R24 000<br>
+  </section>
+
+  <footer class="footer">
+  <div class="footer-container">
+    <!-- About Section -->
+    <div class="footer-section about">
+      <h3>About Our School</h3>
+      <p>We are a premier Culinary Arts School dedicated to shaping the next generation of chefs and hospitality leaders. Our programs blend creativity, technique, and real-world experience.</p>
+    </div>
+
+    <!-- Quick Links -->
+    <div class="footer-section links">
+      <h3>Quick Links</h3>
+      <ul>
+        <li><a href="../index.html">Home</a></li>
+          <li><a href="./about.html">About</a></li>
+          <li><a href="./contact.html">Contact</a></li>
+          <li><a href="./student_life.html">Student Life</a></li>
+          <li><a href="./apply.html">Apply</a></li>
+      </ul>
+    </div>
+
+    <!-- Contact Info -->
+    <div class="footer-section contact">
+      <h3>Contact Us</h3>
+      <p>Email: <a href="mailto:cook@deli.co.za">cook@deli.co.za</a></p>
+      <p>Phone: (021)-555-7890</p>
+      <p>54 Church(kerk) Street,<br>
+          Polokwane,<br>
+          0700</p>
+    </div>
+
+    <!-- Social Media -->
+    <div class="footer-section social">
+      <h3>Follow Us</h3>
+      <div class="social-icons">
+      <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://x.com/" target="_blank"><i class="fab fa-x"></i></a>
+                <a href="https://www.youtube.com//" target="_blank"><i class="fab fa-youtube"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Copyright -->
+  <div class="footer-bottom">
+    <p>© 2025 @deli_kitchen. All Rights Reserved.</p>
+  </div>
+</footer>
+
+   <script>
+  const dropBtn = document.querySelector('.dropbtn');
+  const dropdown = document.querySelector('.dropdown');
+
+  dropBtn.addEventListener('click', function (e) {
+    e.preventDefault();
+    dropdown.classList.toggle('open');
+  });
+
+  // Close dropdown when clicking outside
+  document.addEventListener('click', function (e) {
+    if (!dropdown.contains(e.target)) {
+      dropdown.classList.remove('open');
+    }
+  });
+</script>
+</body>
+</html>

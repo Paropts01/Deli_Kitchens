@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,73 +5,88 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
 
-    <link rel="stylesheet" href="./css/style.CSS">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"> 
-    <link rel="icon" type="img" href="./Assets/Fav.png" >
-    <!--background picture-->
+    <link rel="stylesheet" href="./css/style.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
 
-</head>
-
-<body >
-  
-    <header>
-        <!--navigation bar code-->
-        <div class="navbar">
-
-            <img src="./Assets/logo.png" alt="logo" class="logo" width="105" height="80">
-            
-                <nav class="nav-links">
-                    <!--checkbox for responsive version-->
-                  <input type="checkbox" id="nav-toggle" class="nav-toggle">
-                    <label for="nav-toggle" class="nav-toggle-label">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    </label>
-                    <ul>
-                        <li><a href="./index.html">Home</a></li>
-                        <li><a href="./Pages/about.html">About</a></li>
-                        <li><a href="./Pages/contact.html">Contacts</a></li>
-                        <li><a href="./Pages/programs.html">Programs</a></li>
-                        <li><a href="./Pages/student_life.html">Student Life</a></li>
-                        <li><a href="./Pages/apply.html">Apply</a></li>
-                </ul>
-            </nav>
-        </div>    
-    </header>
-
-    <!--main content-->
+<body>
     
-    <div class="slideshow-container">
+  <nav class="navbar">    
+      <div class="logo" >
+            <img src="./Assets/logo.png" alt="logo" width="110" height="80" >
+          </div>  
+         <ul>
+          
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./pages/about.html">About</a></li>
+          <li><a href="./pages/contact.html">Contact</a></li>
+          <li class="dropdown">
+              <a href="#" class="dropbtn">Programs ▾</a>
+            <div class="dropdown-content">
+              <a href="./pages/culinary.html">Diploma in Culinary Arts </a>
+              <a href="./pages/baking.html">Diploma in Proffesional Baking & Pastry</a>
+              <a href="./pages/food_manegement.html">Diploma in Food & Beverage Management</a>
+              <a href="./pages/fundimentals.html">Diploma in Culinary Fundamentals</a>
+              <a href="./pages/cuisine.html">Certificate in International Cuisine</a>
+              <a href="./pages/vegan.html">Certificate in Plant-Based & Vegan Cooking</a>
+              <a href="./pages/artisan.html">Certificate in Artisan Bread & Pastry</a>
+              <a href="./pages/chocolate.html">Certificate in Chocolate & Confectionery Arts</a>
+              <a href="./pages/coffee.html">Certificate in Home Barista & Coffee Brewing</a>
+              <a href="./pages/wine_testing.html">Certificate in Wine Tasting & Pairing</a>
+              <a href="./pages/healthy.html">Certificate in Healthy Cooking for Families</a>
+              <a href="./pages/street_food.html">Certificate in Street Food & Food Truck Creations</a>
+              <a href="./pages/entrepreneurship.html">Certificate in Culinary Entrepreneurship</a>
+              <a href="./pages/food_safety.html">Certificate in Food Safety & Sanitation</a>
+              <a href="./pages/menu.html">Certificate in Menu Design & Cost Control</a>
+              <a href="./pages/hospitality.html">Certificate in Hospitality & Event Management</a>
+            </div>
+          </li>
+          <li><a href="./pages/student_life.html">Student Life</a></li>
+          <li><a href="./pages/apply.html">Apply</a></li>
+       </ul>
+       
+  </nav>
 
-  <div class="mySlides fade">
-    <div class="numbertext">1 / 5</div>
-    <img src="./Assets/one.jpg" alt="Slide 1">
-    <div class="text">Caption One</div>
+
+<div class="slideshow-container">
+
+   <div class="mySlides fade">
+    <img src="./Assets/one.jpg" alt="Cooking Class">
+    <div class="slide-text">
+      <h2>Master the Art of Baking </h2>
+      <p>Bake like a master you were always meant to be</p>
+    </div>
   </div>
 
   <div class="mySlides fade">
-    <div class="numbertext">2 / 5</div>
-    <img src="./Assets/two.jpg" alt="Slide 2">
-    <div class="text">Caption Two</div>
+    <img src="./Assets/two.jpg" alt="Cooking Class">
+    <div class="slide-text">
+      <h2>Be the master of your space</h2>
+      <p>Your own cooking station for your journey to being a mater chef</p>
+    </div>
   </div>
 
   <div class="mySlides fade">
-    <div class="numbertext">3 / 5</div>
-    <img src="./Assets/three.jpeg" alt="Slide 3">
-    <div class="text">Caption Three</div>
+    <img src="./Assets/three.jpeg" alt="Cooking Class">
+    <div class="slide-text">
+      <h2>Build Teamwork</h2>
+      <p>Learn working with others for personal growth</p>
+    </div>
   </div>
 
   <div class="mySlides fade">
-    <div class="numbertext">4 / 5</div>
-    <img src="./Assets/four.jpeg" alt="Slide 4">
-    <div class="text">Caption Four</div>
+    <img src="./Assets/four.jpeg" alt="Cooking Class">
+    <div class="slide-text">
+      <h2>Graduate</h2>
+      <p>Be a confident professional master chef</p>
+    </div>
   </div>
 
   <div class="mySlides fade">
-    <div class="numbertext">5 / 5</div>
-    <img src="./Assets/five.jpeg" alt="Slide 5">
-    <div class="text">Caption Five</div>
+    <img src="./Assets/five.jpeg" alt="Cooking Class">
+    <div class="slide-text">
+      <h2>Be part of our community</h2>
+      <p>Be part of a growing community of master chefs</p>
+    </div>
   </div>
 
   <!-- Next and previous buttons -->
@@ -81,7 +95,6 @@
 
 </div>
 
-<br>
 
 <!-- The dots -->
 <div style="text-align:center; position:absolute; bottom:20px; width:100%;">
@@ -93,24 +106,131 @@
 </div>
 
 
+    <!-- Header -->
+  <header class="header">
+    <h1>Our Famous Culinary Programs</h1>
+    <p>Explore our hands-on courses designed to turn your passion into a career.<br>Let your cooking journey start with us</p>
+  </header>
 
-            <!--social media icons-->
-            <div class="socials">
-                <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+  <!-- Programs Section -->
+  <section class="programs">
+    
+
+    <div class="program-card">
+      <img src="./Assets/card1.jpeg" alt="Culinary Arts">
+      <div class="program-info">
+        <h2>Culinary Arts</h2>
+        <p>Master the fundamentals of professional cooking — from knife skills to advanced plating techniques. Learn under expert chefs and gain real-world kitchen experience.</p>
+        <a href="./Pages/culinary.html" target="_blank" class="btn">Learn More</a>
+      </div>
+    </div>
+
+    <div class="program-card">
+      <img src="./Assets/card2.jpeg" alt="Baking & Pastry Arts">
+      <div class="program-info">
+        <h2>Baking & Pastry Arts</h2>
+        <p>Explore the art of bread, cakes, and desserts. Develop precision, creativity, and technical skills needed to thrive in pastry and bakery careers.Combine fun with baking!</p>
+        <a href="./pages/baking.html" target="_blank" class="btn">Learn More</a>
+      </div>
+    </div>
+
+    <div class="program-card">
+      <img src="./Assets/card3.jpeg" alt="Food & Beverage Management">
+      <div class="program-info">
+        <h2>Food & Beverage Management</h2>
+        <p>Combine your love for food with business expertise. This program covers menu design, cost control, and customer service management for hospitality success.</p>
+        <a href="./pages/food_manegement.html" target="_blank" class="btn">Learn More</a>
+      </div>
+    </div>
+
+    <div class="program-card">
+      <img src="./Assets/card4.jpeg" alt="Culinary Fundamentals">
+      <div class="program-info">
+        <h2>Culinary Fundamentals</h2>
+        <p>Learning culinary fundamentals is an incredibly valuable pursuit because it provides the foundational knowledge to prepare delicious, healthy, and safe meals, while fostering independence and creativity in the kitchen.</p>
+        <a href="./pages/fundimentals.html" target="_blank" class="btn">Learn More</a>
+      </div>
+    </div>
+
+        <div class="program-card">
+      <img src="./Assets/card5.jpeg" alt="Food & Beverage Management">
+      <div class="program-info">
+        <h2>International Cuisine</h2>
+        <p>Learning about international cuisine is a highly rewarding pursuit because it offers profound cultural immersion, enhances practical culinary skills, and provides significant personal development opportunities.</p>
+        <a href="./pages/cuisine.html" target="_blank" class="btn">Learn More</a>
+      </div>
+    </div>
+
+    <div class="program-card">
+      <img src="./Assets/card6.jpeg" alt="Culinary Fundamentals">
+      <div class="program-info">
+        <h2>Home Barista & Coffee Brewing</h2>
+        <p>Skills of a home barista and understanding coffee brewing is a rewarding pursuit that offers a combination of sensory appreciation, creativity, and personal enrichment.</p>
+        <a href="./pages/coffee.html" target="_blank" class="btn">Learn More</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="announcement">
+  <div class="announcement-content">
+    <h2>📢 Important Announcement</h2>
+    <p>Admissions for the <strong>2025 Culinary Arts Program</strong> are now open!  
+      Apply before <strong>December 15th</strong> to secure your spot.</p>
+  </div>
+  <button class="close-announcement">&times;</button>
+</section>
+
+  <footer class="footer">
+  <div class="footer-container">
+    <!-- About Section -->
+    <div class="footer-section about">
+      <h3>About Our School</h3>
+      <p>We are a premier Culinary Arts School dedicated to shaping the next generation of chefs and hospitality leaders. Our programs blend creativity, technique, and real-world experience.</p>
+    </div>
+
+    <!-- Quick Links -->
+    <div class="footer-section links">
+      <h3>Quick Links</h3>
+      <ul>
+        <li><a href="./index.html">Home</a></li>
+          <li><a href="./pages/about.html">About</a></li>
+          <li><a href="./pages/contact.html">Contact</a></li>
+          <li><a href="./pages/student_life.html">Student Life</a></li>
+          <li><a href="./pages/apply.html">Apply</a></li>
+      </ul>
+    </div>
+
+    <!-- Contact Info -->
+    <div class="footer-section contact">
+      <h3>Contact Us</h3>
+      <p>Email: <a href="mailto:cook@deli.co.za">cook@deli.co.za</a></p>
+      <p>Phone: (021)-555-7890</p>
+      <p>54 Church(kerk) Street,<br>
+          Polokwane,<br>
+          0700</p>
+    </div>
+
+    <!-- Social Media -->
+    <div class="footer-section social">
+      <h3>Follow Us</h3>
+      <div class="social-icons">
+      <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
                 <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
                 <a href="https://x.com/" target="_blank"><i class="fab fa-x"></i></a>
                 <a href="https://www.youtube.com//" target="_blank"><i class="fab fa-youtube"></i></a>
-            
+      </div>
+    </div>
+  </div>
 
-    </main>
-                <!--footer-->
-                <footer style="background-color:rgb(223, 215, 215);box-sizing: border-box;border-top: 5px solid rgb(247, 168, 23) ;text-align: center;font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;font-style:italic;" >
-                    <p>&copy; Deli 2025 </p>
-                </footer>
+  <!-- Copyright -->
+  <div class="footer-bottom">
+    <p>© 2025 @deli_kitchen. All Rights Reserved.</p>
+  </div>
+</footer>
 
 
-
-                <script>
+<!--slides script-->
+<script>
 let slideIndex = 0;
 let slides = document.getElementsByClassName("mySlides");
 let dots = document.getElementsByClassName("dot");
@@ -138,11 +258,15 @@ function currentSlide(n) {
 function showSlides(n) {
   for (let i = 0; i < slides.length; i++) {
     slides[i].style.display = "none";
+    slides[i].classList.remove("active"); // remove active class for fade-in text
   }
+
   for (let i = 0; i < dots.length; i++) {
     dots[i].classList.remove("active");
   }
+
   slides[n].style.display = "block";
+  slides[n].classList.add("active"); // trigger fade-in animation for text
   dots[n].classList.add("active");
 }
 
@@ -153,8 +277,54 @@ function autoSlides() {
     if (slideIndex >= slides.length) { slideIndex = 0; }
     showSlides(slideIndex);
     autoSlides();
-  }, 6000); // 40 seconds
+  }, 6000); // 6 seconds
 }
+
+/* Dropdown menu logic */
+document.querySelector('.dropbtn').addEventListener('click', function (e) {
+  e.preventDefault();
+  this.parentElement.classList.toggle('active');
+});
+
+// Close dropdown when clicking outside
+document.addEventListener('click', function (e) {
+  const dropdown = document.querySelector('.dropdown');
+  if (!dropdown.contains(e.target)) {
+    dropdown.classList.remove('active');
+  }
+});
 </script>
-    </body> 
+
+
+
+<!--dropdown button-->
+<script>
+  const dropBtn = document.querySelector('.dropbtn');
+  const dropdown = document.querySelector('.dropdown');
+
+  dropBtn.addEventListener('click', function (e) {
+    e.preventDefault();
+    dropdown.classList.toggle('open');
+  });
+
+  // Close dropdown when clicking outside
+  document.addEventListener('click', function (e) {
+    if (!dropdown.contains(e.target)) {
+      dropdown.classList.remove('open');
+    }
+  });
+</script>
+
+<!--annoncement stuff script-->
+<script>
+  const closeBtn = document.querySelector('.close-announcement');
+  const announcement = document.querySelector('.announcement');
+
+  closeBtn.addEventListener('click', () => {
+    announcement.style.display = 'none';
+  });
+</script>
+
+
+</body>
 </html>
