@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <meta name="description" content="About page that tells the history of deli kitchen and the master chefs that teach at deli kitchen.">
+    <title>About Deli Kitchen</title>
+     <link rel="stylesheet" href="../css/style.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+     
+</head>
+<body>
+      <nav class="navbar">    
+  <div class="logo">
+    <img src="../Assets/logo.png" alt="logo">
+  </div>
+
+  <div class="hamburger" id="hamburger">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+
+  <ul id="nav-links">
+    <li><a href="../index.html">Home</a></li>
+    <li><a href="../pages/about.html">About</a></li>
+    <li><a href="../pages/contact.html">Contact</a></li>
+    <li class="dropdown">
+      <a href="#" class="dropbtn">Programs ▾</a>
+      <div class="dropdown-content">
+        <a href="../pages/culinary.html">Culinary Arts</a>
+        <a href="../pages/baking.html">Professional Baking & Pastry</a>
+        <a href="../pages/food_manegement.html">Culinary Management</a>
+        <a href="../pages/cuisine.html">International Cuisine</a>
+        <a href="../pages/Nutrition & Wellness.html & Wellness.html">Nutrition & Wellness</a>
+      </div>
+    </li>
+    <li><a href="../pages/students.html">Student Life</a></li>
+    <li><a href="../pages/apply.html">Apply</a></li>
+  </ul>
+  <!-- Search container (desktop) -->
+    <div class="search-container" id="searchContainer">
+        <form class="search-form" id="searchForm">
+            <input type="text" class="search-input" placeholder="Search courses, programs..." id="searchInput">
+            <button type="submit" class="search-button">
+                <svg class="search-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="11" cy="11" r="8"></circle>
+                    <path d="m21 21-4.3-4.3"></path>
+                </svg>
+            </button>
+        </form>
+    </div>
+
+    <!-- Search toggle (mobile) -->
+    <button class="search-toggle" id="searchToggle">
+        <svg class="search-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="11" cy="11" r="8"></circle>
+            <path d="m21 21-4.3-4.3"></path>
+        </svg>
+    </button>
+</nav>
+
+   <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>About Deli Kitchen</h1>
+            <p>Discover our passion for culinary excellence and our commitment to nurturing the next generation of world-class chefs.</p>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="aboutus">
+        <div class="container">
+            <div class="section-title">
+                <h2>Our Story</h2>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>Over 22 Years of Culinary Excellence</h3>
+                    <p>Founded in 2003 by renowned chef Viscem Blader, Deli Kitchen has been at the forefront of culinary education for over two decades. Our mission has always been to blend traditional techniques with innovative approaches to cooking.</p>
+                    <p>We believe that great chefs are not born, but made through dedication, practice, and the right guidance. Our experienced instructors bring decades of professional experience from Michelin-starred restaurants, boutique bakeries, and international hotel chains.</p>
+                    <p>Our state-of-the-art facilities include professional-grade kitchens, a wine tasting room, a chocolate laboratory, and a farm-to-table restaurant where students gain real-world experience.</p>
+                </div>
+                <div class="about-image">
+                    <img src="../Assets/about.jpg" alt="Our culinary team in the kitchen" class="clickable-img">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mission Section -->
+    <section class="mission">
+        <div class="container">
+            <div class="section-title">
+                <h2>Our Mission & Values</h2>
+            </div>
+            <div class="mission-grid">
+                <div class="mission-card">
+                    <div class="mission-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3>Education Excellence</h3>
+                    <p>We provide comprehensive culinary education that combines theory with extensive hands-on training in professional kitchen environments.</p>
+                </div>
+                <div class="mission-card">
+                    <div class="mission-icon">
+                        <i class="fas fa-leaf"></i>
+                    </div>
+                    <h3>Sustainability</h3>
+                    <p>We emphasize sustainable practices, from sourcing local ingredients to minimizing food waste in all our culinary operations.</p>
+                </div>
+                <div class="mission-card">
+                    <div class="mission-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>Community</h3>
+                    <p>We foster a supportive community where students collaborate, share ideas, and grow together as culinary professionals.</p>
+                </div>
+                <div class="mission-card">
+                    <div class="mission-icon">
+                        <i class="fas fa-lightbulb"></i>
+                    </div>
+                    <h3>Innovation</h3>
+                    <p>We encourage creativity and innovation, pushing the boundaries of traditional cuisine while respecting culinary heritage.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section class="team">
+        <div class="container">
+            <div class="section-title">
+                <h2>Meet Our Master Chefs</h2>
+            </div>
+            <div class="team-grid">
+                <div class="team-member">
+                    <div class="member-photo">
+                        <img src="../Assets/chef1.jpg" alt="Chef Mark Dubois" class="clickable-img">
+                    </div>
+                    <h3>Chef Mark Dubois</h3>
+                    <p>Director of Culinary Arts</p>
+                    <p class="experience">Former Executive Chef at La Colombe, Cape Town</p>
+                </div>
+                <div class="team-member">
+                    <div class="member-photo">
+                        <img src="../Assets/chef3.jpg" alt="Chef Antonio Rossi" class="clickable-img">
+                    </div>
+                    <h3>Chef Antonio Rossi</h3>
+                    <p>Head of Pastry Department</p>
+                    <p class="experience">Master Patissier with 20+ years experience</p>
+                </div>
+                <div class="team-member">
+                    <div class="member-photo">
+                        <img src="../Assets/chef4.jpg" alt="Chef Kenji Tanaka" class="clickable-img">
+                    </div>
+                    <h3>Chef Kenji Tanaka</h3>
+                    <p>Asian Cuisine Specialist</p>
+                    <p class="experience">Trained in Tokyo's finest sushi restaurants</p>
+                </div>
+                <div class="team-member">
+                    <div class="member-photo">
+                        <img src="../Assets/chef2.jpg" alt="Chef Isabella Martinez" class="clickable-img">
+                    </div>
+                    <h3>Chef Isabella Martinez</h3>
+                    <p>Culinary Management Director</p>
+                    <p class="experience">Certified Sommelier and Management Expert</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Values Section -->
+    <section class="values">
+        <div class="container">
+            <div class="section-title">
+                <h2>Our Core Values</h2>
+            </div>
+            <div class="values-grid">
+                <div class="value-card">
+                    <div class="value-icon">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <h3>Passion</h3>
+                    <p>We believe passion is the secret ingredient in every great dish. We cultivate this passion in all our students.</p>
+                </div>
+                <div class="value-card">
+                    <div class="value-icon">
+                        <i class="fas fa-award"></i>
+                    </div>
+                    <h3>Excellence</h3>
+                    <p>We strive for excellence in everything we do, from teaching techniques to ingredient selection.</p>
+                </div>
+                <div class="value-card">
+                    <div class="value-icon">
+                        <i class="fas fa-handshake"></i>
+                    </div>
+                    <h3>Integrity</h3>
+                    <p>We maintain the highest standards of integrity in our teaching, business practices, and relationships.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- History Section -->
+    <section class="history">
+        <div class="container">
+            <div class="section-title">
+                <h2>Our Journey</h2>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <div class="timeline-year">2003</div>
+                        <h3>Foundation</h3>
+                        <p>Deli Kitchen was founded by Chef Viscem Blader with a vision to revolutionize culinary education.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <div class="timeline-year">2006</div>
+                        <h3>First Expansion</h3>
+                        <p>We expanded our facilities to include a dedicated pastry kitchen and wine studies program.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <div class="timeline-year">2010</div>
+                        <h3>International Recognition</h3>
+                        <p>Our graduates began winning prestigious culinary competitions worldwide, establishing our global reputation.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <div class="timeline-year">2015</div>
+                        <h3>Sustainability Initiative</h3>
+                        <p>We launched our farm-to-table program and sustainability initiatives, becoming industry leaders.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <div class="timeline-year">2023</div>
+                        <h3>Digital Transformation</h3>
+                        <p>We introduced technial learning while maintaining our commitment to hands-on training.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <h3 data-target="95">0</h3>
+                    <p>Graduation Rate</p>
+                </div>
+                <div class="stat-item">
+                    <h3 data-target="87">0</h3>
+                    <p>Job Placement</p>
+                </div>
+                <div class="stat-item">
+                    <h3 data-target="79">0</h3>
+                    <p>Master Chefs</p>
+                </div>
+                <div class="stat-item">
+                    <h3 data-target="1200">0</h3>
+                    <p>Successful Graduates</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lightbox HTML -->
+    <div class="lightbox" id="lightbox">
+        <button class="lightbox-close">&times;</button>
+        <div class="lightbox-content">
+            <img class="lightbox-img" src="" alt="">
+            <div class="lightbox-caption"></div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <!-- About Section -->
+            <div class="footer-section about">
+                <h3>About Our School</h3>
+                <p>We are a premier Culinary Arts School dedicated to shaping the next generation of chefs and hospitality leaders. Our programs blend creativity, technique, and real-world experience.</p>
+            </div>
+
+            <!-- Quick Links -->
+            <div class="footer-section links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="./about.html">About</a></li>
+                    <li><a href="./contact.html">Contact</a></li>
+                    <li><a href="./student_life.html">Student Life</a></li>
+                    <li><a href="./apply.html">Apply</a></li>
+                </ul>
+            </div>
+
+            <!-- Contact Info -->
+            <div class="footer-section contact">
+                <h3>Contact Us</h3>
+                <p>Email: <a href="mailto:cook@deli.co.za">cook@deli.co.za</a></p>
+                <p>Phone: (021)-555-7890</p>
+                <p>54 Church(kerk) Street,<br>
+                    Polokwane,<br>
+                    0700</p>
+            </div>
+
+            <!-- Social Media -->
+            <div class="footer-section social">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://x.com/" target="_blank"><i class="fab fa-x"></i></a>
+                    <a href="https://www.youtube.com//" target="_blank"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Copyright -->
+        <div class="footer-bottom">
+            <p>© 2025 @deli_kitchen. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Hamburger menu toggle
+        const hamburger = document.getElementById('hamburger');
+        const navLinks = document.getElementById('nav-links');
+        const dropdowns = document.querySelectorAll('.dropdown');
+
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            navLinks.classList.toggle('show');
+        });
+
+        // Dropdown functionality
+        const dropBtn = document.querySelector('.dropbtn');
+        const dropdown = document.querySelector('.dropdown');
+
+        // Desktop dropdown
+        dropBtn.addEventListener('click', function (e) {
+            if (window.innerWidth > 768) {
+                e.preventDefault();
+                dropdown.classList.toggle('active');
+            }
+        });
+
+        // Mobile dropdown
+        dropdowns.forEach(drop => {
+            const dropBtn = drop.querySelector('.dropbtn');
+            
+            dropBtn.addEventListener('click', (e) => {
+                if (window.innerWidth <= 768) {
+                    e.preventDefault();
+                    drop.classList.toggle('open');
+                }
+            });
+            
+            // Allow dropdown links to work normally
+            const dropdownLinks = drop.querySelectorAll('.dropdown-content a');
+            dropdownLinks.forEach(link => {
+                link.addEventListener('click', (e) => {
+                    // Don't prevent default - allow navigation
+                    // Close the mobile menu if open
+                    if (window.innerWidth <= 768) {
+                        navLinks.classList.remove('show');
+                        hamburger.classList.remove('active');
+                    }
+                });
+            });
+        });
+
+        // Close dropdown when clicking outside (desktop only)
+        document.addEventListener('click', function (e) {
+            if (window.innerWidth > 768) {
+                if (!dropdown.contains(e.target)) {
+                    dropdown.classList.remove('active');
+                }
+            }
+        });
+   
+        // Animated Stats Counter
+        const statItems = document.querySelectorAll('.stat-item h3');
+        
+        function animateStats() {
+            statItems.forEach(stat => {
+                const target = parseInt(stat.getAttribute('data-target'));
+                const increment = target / 100;
+                let current = 0;
+                
+                const timer = setInterval(() => {
+                    current += increment;
+                    stat.textContent = Math.floor(current);
+                    
+                    if (current >= target) {
+                        stat.textContent = target;
+                        clearInterval(timer);
+                    }
+                }, 20);
+            });
+        }
+
+        // Trigger stats animation when section is in view
+        const statsSection = document.querySelector('.stats');
+        const observerOptions = {
+            root: null,
+            threshold: 0.3,
+            rootMargin: '0px'
+        };
+
+        const observer = new IntersectionObserver(function(entries, observer) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    animateStats();
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, observerOptions);
+
+        observer.observe(statsSection);
+   
+
+                    // Lightbox JavaScript -->
+            
+                    document.addEventListener('DOMContentLoaded', function() {
+                        // Lightbox elements
+                        const lightbox = document.getElementById('lightbox');
+                        const lightboxImg = document.querySelector('.lightbox-img');
+                        const lightboxCaption = document.querySelector('.lightbox-caption');
+                        const lightboxClose = document.querySelector('.lightbox-close');
+                        
+                        // Get all images with the clickable-img class
+                        const images = document.querySelectorAll('.clickable-img');
+                        
+                        // Initialize the lightbox
+                        function initLightbox() {
+                            // Add click event to each image
+                            images.forEach(img => {
+                                img.addEventListener('click', function() {
+                                    openLightbox(this);
+                                });
+                            });
+                            
+                            // Add keyboard navigation
+                            document.addEventListener('keydown', function(e) {
+                                if (lightbox.classList.contains('active') && e.key === 'Escape') {
+                                    closeLightbox();
+                                }
+                            });
+                            
+                            // Lightbox controls
+                            lightboxClose.addEventListener('click', closeLightbox);
+                            
+                            // Close lightbox when clicking outside the image
+                            lightbox.addEventListener('click', function(e) {
+                                if (e.target === lightbox) {
+                                    closeLightbox();
+                                }
+                            });
+                        }
+                        
+                        // Open lightbox with specific image
+                        function openLightbox(img) {
+                            lightboxImg.src = img.src;
+                            lightboxCaption.textContent = img.alt || '';
+                            lightbox.classList.add('active');
+                            document.body.style.overflow = 'hidden';
+                        }
+                        
+                        // Close lightbox
+                        function closeLightbox() {
+                            lightbox.classList.remove('active');
+                            document.body.style.overflow = '';
+                        }
+                        
+                        // Initialize the lightbox
+                        initLightbox();
+                    });
+                
+                //searc bar script
+
+            
+            // Search functionality
+            const searchToggle = document.getElementById('searchToggle');
+            const searchContainer = document.getElementById('searchContainer');
+            const searchForm = document.getElementById('searchForm');
+            const searchInput = document.getElementById('searchInput');
+
+            // Toggle search on mobile
+            searchToggle.addEventListener('click', (e) => {
+                e.stopPropagation(); // Prevent event from bubbling up
+                searchContainer.classList.toggle('show');
+                
+                // Hide menu when search opens
+                if (window.innerWidth <= 768) {
+                    hamburger.classList.remove('active');
+                    navLinks.classList.remove('show');
+                }
+                
+                // Focus on input when search is shown
+                if (searchContainer.classList.contains('show')) {
+                    setTimeout(() => {
+                        searchInput.focus();
+                    }, 100);
+                }
+            });
+
+            // Handle search form submission
+            searchForm.addEventListener('submit', (e) => {
+                e.preventDefault();
+                const searchTerm = searchInput.value.trim();
+                
+                if (searchTerm) {
+                    // Implement your search functionality here
+                    alert(`Searching for: ${searchTerm}`);
+                    // You would typically redirect to a search results page or filter content
+                    // window.location.href = `/search?q=${encodeURIComponent(searchTerm)}`;
+                }
+            });
+
+            // Close search when clicking outside on mobile
+            document.addEventListener('click', (e) => {
+                if (window.innerWidth <= 768 && 
+                    !searchContainer.contains(e.target) && 
+                    !searchToggle.contains(e.target) &&
+                    searchContainer.classList.contains('show')) {
+                    searchContainer.classList.remove('show');
+                }
+            });
+
+            // Close search when window is resized to desktop size
+            window.addEventListener('resize', () => {
+                if (window.innerWidth > 768 && searchContainer.classList.contains('show')) {
+                    searchContainer.classList.remove('show');
+                }
+            });
+
+</script>
+</body>
+</html>

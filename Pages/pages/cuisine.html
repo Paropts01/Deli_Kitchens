@@ -3,52 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Program</title>
+    <meta name="description" content="Describes International Cuisine program in details and payment detais.">
+    <title>International Cuisine</title>
 <link rel="stylesheet" href="../css/style.css">
  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+ 
 </head>
 <body>
 
    <nav class="navbar">    
-      <div class="logo" >
-            <img src="../Assets/logo.png" alt="logo" width="110" height="80" >
-          </div>  
-         <ul>
-          
-          <li><a href="../index.html">Home</a></li>
-          <li><a href="./about.html">About</a></li>
-          <li><a href="./contact.html">Contact</a></li>
-          <li class="dropdown">
-              <a href="#" class="dropbtn">Programs ▾</a>
-            <div class="dropdown-content">
-              <a href="./culinary.html">Diploma in Culinary Arts </a>
-              <a href="./baking.html">Diploma in Proffesional Baking & Pastry</a>
-              <a href="./food_manegement.html">Diploma in Food & Beverage Management</a>
-              <a href="./fundimentals.html">Diploma in Culinary Fundamentals</a>
-              <a href="./cuisine.html">Certificate in International Cuisine</a>
-              <a href="./vegan.html">Certificate in Plant-Based & Vegan Cooking</a>
-              <a href="./artisan.html">Certificate in Artisan Bread & Pastry</a>
-              <a href="./chocolate.html">Certificate in Chocolate & Confectionery Arts</a>
-              <a href="./coffee.html">Certificate in Home Barista & Coffee Brewing</a>
-              <a href="./wine_testing.html">Certificate in Wine Tasting & Pairing</a>
-              <a href="./healthy.html">Certificate in Healthy Cooking for Families</a>
-              <a href="./street_food.html">Certificate in Street Food & Food Truck Creations</a>
-              <a href="./entrepreneurship.html">Certificate in Culinary Entrepreneurship</a>
-              <a href="./food_safety.html">Certificate in Food Safety & Sanitation</a>
-              <a href="./menu.html">Certificate in Menu Design & Cost Control</a>
-              <a href="./hospitality.html">Certificate in Hospitality & Event Management</a>
-            </div>
-          </li>
-          <li><a href="./student_life.html">Student Life</a></li>
-          <li><a href="./apply.html">Apply</a></li>
-       </ul>
-       
-  </nav>
+  <div class="logo">
+    <img src="../Assets/logo.png" alt="logo">
+  </div>
+
+  <div class="hamburger" id="hamburger">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+
+  <ul id="nav-links">
+    <li><a href="../index.html">Home</a></li>
+    <li><a href="./about.html">About</a></li>
+    <li><a href="./contact.html">Contact</a></li>
+    <li class="dropdown">
+      <a href="#" class="dropbtn">Programs ▾</a>
+      <div class="dropdown-content">
+        <a href="./culinary.html">Culinary Arts</a>
+        <a href="./baking.html">Professional Baking & Pastry</a>
+        <a href="./food_manegement.html">Culinary Management</a>
+        <a href="./cuisine.html">International Cuisine</a>
+        <a href="./Nutrition & Wellness.html">Nutrition & Wellness</a>
+      </div>
+    </li>
+    <li><a href="./students.html">Student Life</a></li>
+    <li><a href="./apply.html">Apply</a></li>
+  </ul>
+</nav>
 
   <header class="program-header">
     <img src="../Assets/extra.jpeg" alt="Culinary Arts Program">
     <div class="program-title">
-      <h1>Certificate in International Cuisine</h1>
+      <h1>International Cuisine</h1>
       <p>Discover the art of cooking and unlock your professional chef potential.</p>
     </div>
   </header>
@@ -70,9 +66,8 @@
         Adaptability and Flexibility<br>
       <br>
 
-      <h2>Duration & Requirements</h2>
+      <h2>Requirements & Mode of Study </h2>
       <p>
-        <strong>Duration:</strong> 3 years (full-time)<br>
         <strong>Entry Requirement:</strong> Grade 12 certificate or equivalent<br>
         <strong>Mode of Study:</strong> On-campus with practical sessions in our training kitchens
       </p><br>
@@ -87,12 +82,12 @@
         <br>
 
           <h2>Prices</h2>
-        monthly = 2000<br>
+        monthly = R2 000<br>
         6 months = R12 000<br>
         12 months = R24 000<br>
   </section>
 
-  <footer class="footer">
+   <footer class="footer">
   <div class="footer-container">
     <!-- About Section -->
     <div class="footer-section about">
@@ -140,21 +135,63 @@
   </div>
 </footer>
 
-   <script>
-  const dropBtn = document.querySelector('.dropbtn');
-  const dropdown = document.querySelector('.dropdown');
 
-  dropBtn.addEventListener('click', function (e) {
-    e.preventDefault();
-    dropdown.classList.toggle('open');
-  });
+ <script>
+        // Hamburger menu toggle
+        const hamburger = document.getElementById('hamburger');
+        const navLinks = document.getElementById('nav-links');
+        const dropdowns = document.querySelectorAll('.dropdown');
 
-  // Close dropdown when clicking outside
-  document.addEventListener('click', function (e) {
-    if (!dropdown.contains(e.target)) {
-      dropdown.classList.remove('open');
-    }
-  });
-</script>
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            navLinks.classList.toggle('show');
+        });
+
+        // Dropdown functionality
+        const dropBtn = document.querySelector('.dropbtn');
+        const dropdown = document.querySelector('.dropdown');
+
+        // Desktop dropdown
+        dropBtn.addEventListener('click', function (e) {
+            if (window.innerWidth > 768) {
+                e.preventDefault();
+                dropdown.classList.toggle('active');
+            }
+        });
+
+        // Mobile dropdown
+        dropdowns.forEach(drop => {
+            const dropBtn = drop.querySelector('.dropbtn');
+            
+            dropBtn.addEventListener('click', (e) => {
+                if (window.innerWidth <= 768) {
+                    e.preventDefault();
+                    drop.classList.toggle('open');
+                }
+            });
+            
+            // Allow dropdown links to work normally
+            const dropdownLinks = drop.querySelectorAll('.dropdown-content a');
+            dropdownLinks.forEach(link => {
+                link.addEventListener('click', (e) => {
+                    // Don't prevent default - allow navigation
+                    // Close the mobile menu if open
+                    if (window.innerWidth <= 768) {
+                        navLinks.classList.remove('show');
+                        hamburger.classList.remove('active');
+                    }
+                });
+            });
+        });
+
+        // Close dropdown when clicking outside (desktop only)
+        document.addEventListener('click', function (e) {
+            if (window.innerWidth > 768) {
+                if (!dropdown.contains(e.target)) {
+                    dropdown.classList.remove('active');
+                }
+            }
+        });
+    </script>
 </body>
 </html>

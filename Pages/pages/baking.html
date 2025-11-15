@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <meta name="description" content="Describes Professional Baking & Pastry Arts program in details and payment detais.">
+    <title>Professional Baking & Pastry Arts</title>
+<link rel="stylesheet" href="../css/style.css">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+</head>
+<body>
+
+     <nav class="navbar">    
+  <div class="logo">
+    <img src="../Assets/logo.png" alt="logo">
+  </div>
+
+  <div class="hamburger" id="hamburger">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+
+  <ul id="nav-links">
+    <li><a href="../index.html">Home</a></li>
+    <li><a href="./about.html">About</a></li>
+    <li><a href="./contact.html">Contact</a></li>
+    <li class="dropdown">
+      <a href="#" class="dropbtn">Programs ▾</a>
+      <div class="dropdown-content">
+        <a href="./culinary.html">Culinary Arts</a>
+        <a href="./baking.html">Professional Baking & Pastry</a>
+        <a href="./food_manegement.html">Culinary Management</a>
+        <a href="./cuisine.html">International Cuisine</a>
+        <a href="./Nutrition & Wellness.html">Nutrition & Wellness</a>
+      </div>
+    </li>
+    <li><a href="./students.html">Student Life</a></li>
+    <li><a href="./apply.html">Apply</a></li>
+  </ul>
+</nav>
+
+  <header class="program-header">
+    <img src="../Assets/extra.jpeg" alt="Culinary Arts Program">
+    <div class="program-title">
+      <h1>Professional Baking & Pastry Arts</h1>
+      <p>Discover the art of cooking and unlock your professional chef potential.</p>
+    </div>
+  </header>
+
+  <!-- Program Details Section -->
+  <section class="program-details">
+
+    <div class="program-text">
+      <h2>About the Program</h2>
+      <p>
+        Learning how to bake professionally is more than just following recipes—it’s about finding a fulfilling, creative path with lots of possibilities.
+         If you love working with your hands and making people happy with delicious food, formal training is a fantastic stepping stone.
+      </p><br>
+
+      <h2>What You’ll Learn</h2>
+      
+        To Master the Baking Craft<br>
+        Confidence and Creativity<br>
+        Job Stability<br>
+        Entrepreneurial Skills<br>
+        Hands-On Fulfillment<br>
+      <br>
+
+      <h2>Requirements & Mode of Study </h2>
+      <p>
+        <strong>Entry Requirement:</strong> Grade 12 certificate or equivalent<br>
+        <strong>Mode of Study:</strong> On-campus with practical sessions in our training kitchens
+      </p><br>
+
+      <h2>Career Opportunities</h2>
+      
+        Pastry Chef<br>
+        Cake Decorator<br>
+        Chocolatier<br>
+        Business Owner<br>
+        Food Stylist or Recipe Developer<br>
+        <br>
+
+        <h2>Prices</h2>
+        monthly = R2 000<br>
+        6 months = R12 000<br>
+        12 months = R24 000<br>
+  </section>
+
+ <footer class="footer">
+  <div class="footer-container">
+    <!-- About Section -->
+    <div class="footer-section about">
+      <h3>About Our School</h3>
+      <p>We are a premier Culinary Arts School dedicated to shaping the next generation of chefs and hospitality leaders. Our programs blend creativity, technique, and real-world experience.</p>
+    </div>
+
+    <!-- Quick Links -->
+    <div class="footer-section links">
+      <h3>Quick Links</h3>
+      <ul>
+       <li><a href="../index.html">Home</a></li>
+          <li><a href="./about.html">About</a></li>
+          <li><a href="./contact.html">Contact</a></li>
+          <li><a href="./student_life.html">Student Life</a></li>
+          <li><a href="./apply.html">Apply</a></li>
+      </ul>
+    </div>
+
+    <!-- Contact Info -->
+    <div class="footer-section contact">
+      <h3>Contact Us</h3>
+      <p>Email: <a href="mailto:cook@deli.co.za">cook@deli.co.za</a></p>
+      <p>Phone: (021)-555-7890</p>
+      <p>54 Church(kerk) Street,<br>
+          Polokwane,<br>
+          0700</p>
+    </div>
+
+    <!-- Social Media -->
+    <div class="footer-section social">
+      <h3>Follow Us</h3>
+      <div class="social-icons">
+      <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://x.com/" target="_blank"><i class="fab fa-x"></i></a>
+                <a href="https://www.youtube.com//" target="_blank"><i class="fab fa-youtube"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Copyright -->
+  <div class="footer-bottom">
+    <p>© 2025 @deli_kitchen. All Rights Reserved.</p>
+  </div>
+</footer>
+
+
+<script>
+        // Hamburger menu toggle
+        const hamburger = document.getElementById('hamburger');
+        const navLinks = document.getElementById('nav-links');
+        const dropdowns = document.querySelectorAll('.dropdown');
+
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            navLinks.classList.toggle('show');
+        });
+
+        // Dropdown functionality
+        const dropBtn = document.querySelector('.dropbtn');
+        const dropdown = document.querySelector('.dropdown');
+
+        // Desktop dropdown
+        dropBtn.addEventListener('click', function (e) {
+            if (window.innerWidth > 768) {
+                e.preventDefault();
+                dropdown.classList.toggle('active');
+            }
+        });
+
+        // Mobile dropdown
+        dropdowns.forEach(drop => {
+            const dropBtn = drop.querySelector('.dropbtn');
+            
+            dropBtn.addEventListener('click', (e) => {
+                if (window.innerWidth <= 768) {
+                    e.preventDefault();
+                    drop.classList.toggle('open');
+                }
+            });
+            
+            // Allow dropdown links to work normally
+            const dropdownLinks = drop.querySelectorAll('.dropdown-content a');
+            dropdownLinks.forEach(link => {
+                link.addEventListener('click', (e) => {
+                    // Don't prevent default - allow navigation
+                    // Close the mobile menu if open
+                    if (window.innerWidth <= 768) {
+                        navLinks.classList.remove('show');
+                        hamburger.classList.remove('active');
+                    }
+                });
+            });
+        });
+
+        // Close dropdown when clicking outside (desktop only)
+        document.addEventListener('click', function (e) {
+            if (window.innerWidth > 768) {
+                if (!dropdown.contains(e.target)) {
+                    dropdown.classList.remove('active');
+                }
+            }
+        });
+    </script>
+</body>
+</html>
