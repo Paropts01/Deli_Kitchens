@@ -81,6 +81,14 @@ Deli Kitchen/
 
 # Part 3
 
+# impovements based on part one and part 2 (according to feedback)
+- part1 improvements
+- created a read me file and filled all the required details
+
+- part 2 improvements
+- removed any internal styiling
+- improved my skills on part 1 feedback, css styling.
+
 # changelog v1 (06/11/2025)
 - deleted all of the main content on the index page of part 2
 - added a slideshow
